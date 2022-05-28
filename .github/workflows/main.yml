@@ -34,7 +34,7 @@ jobs:
         run: |
              cd ..
              ls -al
-
+             zip --help
     #  - name: action-zip
     #    run: zip -r node-example.zip . -i node-example
 
