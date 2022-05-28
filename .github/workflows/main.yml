@@ -56,7 +56,7 @@ jobs:
   
     steps:
       - name: action-zip
-        run: zip -r node-example.zip /node-example
+        run: zip -r node-example.zip node-example
         
       - uses: actions/upload-artifact@v3
         with:
