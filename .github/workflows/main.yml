@@ -31,10 +31,7 @@ jobs:
              ls -al
 
       - name: action-zip
-        uses: thedoctor0/zip-release@master
-        with:
-           filename: 'node-example.zip'
-           path: node-example
+        run: zip -r node-example.zip . -i node-example
 
       # Runs a single command using the runners shell
       - name: Run a one-line script
