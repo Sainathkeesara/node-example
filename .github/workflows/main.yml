@@ -25,6 +25,9 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v3
       
+      - name: list the files
+        run: ls -al
+
       - name: action-zip
         uses: montudor/action-zip@v1.0.0
         with:
