@@ -33,7 +33,7 @@ jobs:
       - name: action-zip
         uses: thedoctor0/zip-release@master
         with:
-           filename: 'release.zip'
+           filename: 'node-example.zip'
            path: ./node-example
 
       # Runs a single command using the runners shell
