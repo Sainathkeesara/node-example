@@ -30,8 +30,8 @@ jobs:
              cd ..
              ls -al
 
-      - name: action-zip
-        run: zip -r node-example.zip . -i node-example
+    #  - name: action-zip
+    #    run: zip -r node-example.zip . -i node-example
 
       # Runs a single command using the runners shell
       - name: Run a one-line script
@@ -46,7 +46,12 @@ jobs:
    #     - uses: actions/checkout@v2
 
        # - run: mkdir -p path/
-
+  zip:
+  
+    steps:
+      - name: action-zip
+        run: zip -r node-example.zip . -i node-example
+        
       - uses: actions/upload-artifact@v3
         with:
            name: my-artifact
