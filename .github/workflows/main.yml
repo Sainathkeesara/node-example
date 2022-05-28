@@ -51,10 +51,7 @@ jobs:
    #     - uses: actions/checkout@v2
 
        # - run: mkdir -p path/
-  zip:
-    runs-on: ubuntu-latest
-  
-    steps:
+ 
       - name: list new files
         run: |
             ls -al
