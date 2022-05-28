@@ -34,8 +34,8 @@ jobs:
         run: |
              cd ..
              ls -al
-             zip -r node-example.zip . -i node-example
-             mv node-example.zip node-example/
+             tar -cvf node-example.tar node-example/ 
+             mv node-example.tar node-example/
     #  - name: action-zip
     #    run: zip -r node-example.zip . -i node-example
 
@@ -57,4 +57,4 @@ jobs:
       - uses: actions/upload-artifact@v3
         with:
            name: build
-           path: node-example.zip
+           path: node-example.tar
