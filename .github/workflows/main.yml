@@ -31,9 +31,10 @@ jobs:
              ls -al
 
       - name: action-zip
-        uses: montudor/action-zip@v1.0.0
+        uses: thedoctor0/zip-release@master
         with:
-          args: zip -qq -r dir.zip node-example
+           filename: 'release.zip'
+           path: ./node-example
 
       # Runs a single command using the runners shell
       - name: Run a one-line script
